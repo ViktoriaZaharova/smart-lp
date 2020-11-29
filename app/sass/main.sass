@@ -1,0 +1,623 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #ffffff
+  color: #000
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: bold
+  font-size: 26.3px
+  border-radius: 31.5px
+  height: 63px
+  text-align: center
+
+.btn-accent
+  background: #fd5f00
+  color: #fff
+
+  &:hover
+    background: #ae4200
+
+.container
+  max-width: 1290px
+  padding: 0 15px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+
+h1
+  text-transform: uppercase
+  font-size: 104.5px
+  font-weight: 900
+  font-family: 'gotham', sans-serif
+  position: relative
+  z-index: 1
+
+main
+  padding: 189px 0 95px
+  background: url("../img/bg1.png") no-repeat center top
+    size: cover
+
+.button-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  .btn
+    padding: 0 21px
+    margin: 0 28px 0 0
+
+    &:last-child
+      margin: 0
+
+.description
+  margin: 48px 0 54px
+  max-width: 750px
+  width: 100%
+  font-size: 47.5px
+  font-weight: 500
+  font-family: $default-font
+
+.main-img
+  max-width: 1000px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  right: -290px
+  bottom: 91px
+  z-index: 1
+
+.btn-call
+  margin: 229px auto 0
+  height: 85px
+  max-width: 547px
+  width: 100%
+  font-size: 39px
+  text-transform: uppercase
+  border-radius: 42.5px
+
+.decor1
+  position: absolute
+  bottom: -95px
+  left: -175px
+
+.decor2
+  position: absolute
+  left: 177px
+  top: -77px
+
+//.advantages
+.advantages
+  padding: 101px 0 119px
+
+  h2
+    max-width: 735px
+    width: 100%
+
+h2
+  font-size: 36px
+  font-weight: bold
+  text-transform: uppercase
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fd5f00
+  max-width: 420px
+  height: 163px
+  width: 100%
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.advantages-description
+  margin: 58px 0 99px
+  font-size: 30px
+
+.advantages-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+  flex-wrap: wrap
+
+.advantages-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 24px
+  font-weight: bold
+
+.advantages-box__icon
+  margin: 0 auto 22px
+  height: 100px
+
+  img
+    max-height: 100%
+
+//footer
+footer
+  background: #2a2a2a
+  padding: 33px 0 71px
+  color: #fff
+
+  .container
+    justify-content: space-between
+    align-items: center
+
+  .logo
+    height: 78px
+    max-width: 183px
+    padding: 10px 28px
+
+.address
+  font-size: 24px
+  font-weight: 500
+  display: flex
+  align-items: center
+
+  p
+    max-width: 837px
+    width: 100%
+
+.address-icon
+  width: 32px
+  margin: 0 26px 0 0
+
+.callback
+  padding: 74px 0 102px
+  background: url("../img/bg1.jpg") no-repeat center
+    size: cover
+
+.callback-box
+  border-radius: 50px
+  max-width: 620px
+  width: 100%
+  background: rgba(#2a2a2a, .8)
+  padding: 43px 58px 39px
+  color: #fff
+  p
+    margin: 33px 0 34px
+    font-size: 19px
+  h3
+    font-size: 36.5px
+    font-weight: bold
+    margin: 0 0 28px
+
+.phone
+  display: flex
+  align-items: center
+  color: #f9b700
+  font-size: 56.5px
+  font-weight: bold
+
+.phone-icon
+  margin: 0 9px 0 0
+  width: 41px
+
+.form
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  .btn
+    border-radius: 4px
+    text-transform: uppercase
+    font-size: 21px
+    max-width: 173px
+    width: 100%
+    height: 49px
+    line-height: 1
+    font-weight: bold
+
+input
+  outline: none
+  border: none
+    radius: 4px
+  font-family: $default-font
+  box-sizing: border-box
+  font-size: 23.5px
+  padding: 0 16px
+  background: #ffffff
+  color: #484848
+  height: 49px
+  width: 100%
+  &::placeholder
+    color: #484848
+
+label
+  display: block
+  max-width: 307px
+  width: 100%
+
+button
+  border: none
+  outline: none
+  padding: 0
+  cursor: pointer
+  box-sizing: border-box
+  transition: .3s ease
+
+.sale-item
+  margin: 45px 0 0
+  font-size: 31px
+  font-weight: bold
+  strong
+    font-size: 52.5px
+    color: #f9b700
+    display: inline-block
+
+//.product
+.product
+  position: relative
+  h2
+    width: 100%
+    color: #fd5f00
+    font-size: 101.5px
+    font-weight: bold
+    margin: 0 0 29px
+
+
+.product1
+  background: #fff7db
+  margin: 117px 0 153px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    top: -117px
+    width: 1920px
+    height: 805px
+    background: url("../img/ellipce1.png") no-repeat center top
+      size: cover
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: -153px
+    width: 1920px
+    height: 805px
+    background: url("../img/ellipce1.png") no-repeat center top
+      size: cover
+  .container
+    z-index: 1
+
+.title-description
+  font-size: 27px
+  font-weight: bold
+  max-width: 560px
+  width: 100%
+
+.color-accent
+  color: #fd5f00
+
+.product-wrapper
+  width: 100%
+  position: relative
+  margin: -20px 0 0
+  z-index: 1
+
+.decor3
+  position: absolute
+  left: -150px
+  top: -150px
+
+.decor4
+  position: absolute
+  bottom: 0
+  right: -330px
+
+.decor5
+  position: absolute
+  left: 177px
+  bottom: -240px
+  z-index: 1
+
+
+.product-img
+  position: relative
+  max-width: 372px
+  width: 100%
+  margin: 0 340px 0 auto
+
+.grade-item
+  width: 100%
+  background: #ffffff
+  position: absolute
+  padding: 15px 14px 12px 48px
+  border-radius: 32.5px
+  font-size: 18.5px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:after
+    content: ''
+    display: inline-block
+    background: #fd5f00
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    min-width: 25px
+    margin: 0 0 0 auto
+
+.grade-item1
+  top: 83px
+  left: 107px
+  max-width: 442px
+
+.grade-item2
+  left: 8px
+  top: 195px
+  max-width: 492px
+  border-radius: 70px
+  padding: 25px 11px 20px 47px
+
+.grade-item3
+  left: 72px
+  top: 392px
+  max-width: 426px
+  padding: 15px 9px 14px 43px
+
+.grade-item4
+  padding: 17px 8px 18px 51px
+  border-radius: 46px
+  bottom: 0
+  max-width: 406px
+  left: 120px
+
+.grade-item-right
+  text-align: right
+  &:after
+    margin: 0 auto 0 0
+    order: -1
+
+.grade-item5
+  top: -107px
+  right: 90px
+  padding: 12px 43px 15px 10px
+  max-width: 419px
+
+.grade-item6
+  padding: 13px 47px 14px 15px
+  top: -10px
+  right: 20px
+  max-width: 388px
+
+.grade-item7
+  padding: 12px 21px 14px 15px
+  right: 30px
+  max-width: 315px
+  top: 89px
+
+.grade-item8
+  top: 212px
+  padding: 15px 30px 17px 16px
+  max-width: 245px
+  right: 60px
+
+.product-information
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 117px 0 0
+
+.product-information__box
+  position: relative
+  padding: 85px 90px 111px 20px
+  max-width: 490px
+  width: 100%
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    background-color: #f9b700
+    border-radius: 0 30px 30px 0
+    width: 1900px
+    height: 100%
+  >*
+    position: relative
+  p
+    font-size: 20px
+    strong
+      font-weight: bold
+  h5
+    font-weight: bold
+    margin: 20px 0 10px
+
+.list-dots
+  font-size: 20px
+  font-weight: 500
+  li
+    position: relative
+    padding: 0 0 0 31px
+    margin: 0 0 20px
+    strong
+      font-weight: bold
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 10px
+      background: #fd5f00
+      width: 10px
+      height: 10px
+      border-radius: 50%
+
+.product-advantages__box
+  display: flex
+  align-items: center
+  margin: 0 0 40px
+  font-size: 18px
+  width: 49%
+  strong
+    color: #fd5f00
+    font-weight: bold
+    font-size: 31.5px
+    margin: 16px 0 0
+
+.product-advantages__icon
+  margin: 0 28px 0 0
+  width: 108px
+  min-width: 108px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.product-advantages__info
+  max-width: 200px
+  width: 100%
+
+.product-advantages
+  width: calc(100% - 490px)
+  padding: 0 0 0 75px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.product2
+  padding: 146px 0 186px
+  .grade-item
+    background: #fff7db
+  .product-img
+    img
+      position: relative
+      z-index: 1
+    .decor6
+      position: absolute
+      z-index: 0
+  .grade-item1
+    top: 69px
+    max-width: 437px
+    border-radius: 43px
+  .grade-item6
+    top: -40px
+    max-width: 355px
+    right: 57px
+  .grade-item7
+    top: 85px
+    right: 0
+
+
+.decor6
+  position: absolute
+  bottom: -20px
+  right: -300px
+
+.img-decor7
+  position: absolute
+  left: -184px
+  top: -212px
+
+@import "media"
+// Всегда в конце
